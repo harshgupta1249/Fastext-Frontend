@@ -1,0 +1,79 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+body{
+    background-color:white;
+}
+nav{
+    height:10vh;
+    padding:10px 10px;
+    background-color: rgba(68, 117, 230, 0.619);
+}
+.buttons{
+    margin-top: 2vh;
+    display:flex;
+    justify-content: flex-end;
+}
+.signin, .signup{
+    margin:0px 20px;
+    border:2px solid white;
+    border-radius:8px;
+    padding:5px 15px;
+    font-size:1.2rem;
+    background-color: rgba(243, 243, 243, 0.58);
+}
+.signin:hover, .signup:hover{
+    background-color:rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+main{
+    width:100vw;
+    height:90vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading{
+    font-size:100px;
+    margin:20px;
+}
+.sub-heading{
+    font-size:3vw;
+    margin:20px;
+}
+.t{
+    color:red;
+}
+.image{
+    flex-shrink: 4;
+}
+img{
+    height:75vh;
+    /* width:50vw; */
+}
+@media only screen and (max-width:950px) {
+    .heading{
+        font-size:9vw;
+        margin:15px;
+    }
+}
+@media only screen and (max-width:700px) {
+    nav{
+        height:8vh;
+    }
+    .heading{
+        font-size:80px;
+        margin:15px;
+        text-align: center;
+    }
+    .sub-heading{
+        font-size:25px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

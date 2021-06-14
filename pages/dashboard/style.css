@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+}
+nav{
+    padding:0 2.5vw;
+    height:12vh;
+    background-color: rgba(65, 105, 225, 0.952);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-head{
+    width:50vw;
+    font-size:8vh;
+    letter-spacing: 0.4vw;
+}
+.t{
+    color:red;
+}
+.buttons{
+    width:50vw;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.create, .logout{
+    margin:0 15px;
+    border:2px solid white;
+    border-radius:8px;
+    padding:5px 15px;
+    font-size:15px;
+    background-color: rgba(243, 243, 243, 0.58);
+}
+.create:hover, .logout:hover{
+    background-color:rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+main{
+    margin-top:4vh;
+    height:80vh;
+    width:75vw;
+    margin-left:auto;
+    margin-right: auto;
+    background: linear-gradient(to right, rgb(62, 62, 155), rgb(79, 126, 167));
+    border-radius:20px;
+    overflow:auto;
+}
+.main-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.755);
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:22vh;
+    width:65vw;
+    margin:20px;
+    margin-bottom:20px;
+    border: 2px solid rgb(3, 3, 3);
+    border-radius: 5px;
+}
+.message{
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.796);
+    padding:10px 15px;
+    border-radius:10px;
+    width:35vw;
+    height:15vh;
+    overflow:auto;
+    font-size: 2.4vh;
+}
+.email{
+    margin-bottom: 10px;
+    font-size:17px;
+}
+.time{
+    color:rgb(11, 11, 96);
+    font-size:15px;
+}
+.delete img{
+    height:4vh;
+    width:4.5vh;
+}
+.delete img:hover{
+    cursor: pointer;
+    height:4.5vh;
+}
+/* inserted from js */
+.no-msg{
+    margin-top:5vh;
+    font-size:20px;
+    color:white;
+}
+@media only screen and (max-width:950px) {
+    main{
+        width:90vw;
+    }
+    .container{
+        width:85vw;
+    }
+    
+}
+@media only screen and (max-width:460px) {
+    main{
+        width:95vw;
+    }
+    .container{
+        width:90vw;
+    }
+    .nav-head{
+        font-size:40px;
+    }
+    .create, .logout{
+        margin:0 5px;
+        font-size: 13px;
+        padding:5px 10px;
+    }
+    .container{
+        height:150px;
+    }
+    .message{
+        width:150px;
+    }
+    .delete img{
+        height:20px;
+        width:22px;
+    }
+    .email{
+        font-size: 15px;
+    }
+    .time{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    color:black;
+}
+body{
+    overflow:hidden;
+}
+nav{
+    height:13vh;
+    font-size:8vh;
+    text-align: center;
+    background-color: royalblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.t{
+    color:red;
+}
+.main{
+    background: #4b6cb7;
+    background: linear-gradient(to right, #4d73c1, #010612);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20vh;
+    height:45vh;
+    width:738px;
+    display:flex;
+    align-items: flex-start;
+    box-shadow:10px 15px 10px rgba(174, 170, 170, 0.694);
+}
+.container{
+    padding:20px;
+    width:428px;
+}
+.heading{
+    padding:5px;
+    font-size:30px;
+    color: rgb(230, 220, 220);
+}
+.description{
+    margin-top:20px;
+    padding:5px;
+    font-size:19px;
+    color: rgb(230, 220, 220);
+    text-align: justify;
+}
+form{
+    background-color: rgb(224, 221, 221);
+    height:45vh;
+    width:310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.signup{
+    font-size:35px;
+}
+input{
+    width:220px;
+    height:4vh;
+    border-radius: 10px;
+    padding:2px;
+    font-size:2vh;
+    font-weight:bold;
+    color:black;
+    border:1px solid grey;
+}
+input:focus{
+    outline:none;
+}
+.submit input{
+    width:123px;
+    height:6vh;
+    border-radius: 20px;
+    margin:10px;
+    background-color: rgb(47, 79, 177);
+    font-weight:bold;
+    font-size:2.2vh;
+    border:1px solid rgb(5, 5, 49);
+    color:whitesmoke;
+}
+.submit input:hover{
+    background-color:royalblue;
+    cursor: pointer;
+    border:2px solid black;
+}
+
+@media only screen and (max-width:810px) {
+    .main{
+        margin:60px auto;
+        flex-direction: column;
+        width:400px;
+        height:auto;
+        background: linear-gradient(to bottom right, #4d73c1, #010612);
+    }
+    body{
+        overflow:scroll;
+    }
+    .signupForm{
+        width:400px;
+    }
+    .container{
+        width:350px;
+    }
+    input{
+        width:280px;
+    }
+}
+@media only screen and (max-width:455px) {
+    .main{
+        width:90vw;
+        margin: 40px auto;
+    }
+    .signupForm{
+        width:90vw;
+    }
+    .container{
+        width:75vw;
+        height:255px;
+        text-align: center;
+        padding:auto;
+    }
+    input{
+        width:75vw;
+    }
+    .heading{
+        font-size:6.5vw;
+    }
+    .description{
+        margin-top:7px;
+        font-size:5vw;
+    }
+}   
